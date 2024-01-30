@@ -1,0 +1,10 @@
+.head{
+  display: flex;
+  background-color: #19406A;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+}

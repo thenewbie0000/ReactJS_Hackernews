@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+  font-family: Sora, 'sans-serif';
+}
+
+#news-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 11vh;
+  
+}
+.news-item {
+  margin-bottom: 15px;
+  padding: 10px 10px;
+  padding-left: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-height: 20vh;
+  line-height: 1.8;
+  background-color: #B6C4D3;
+  cursor: default;
+}
+.news-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.news-title a{
+  color: var(--color);
+  text-decoration: none;
+}
+.detail{
+  margin-right: 10px;
+}
+button{
+  padding: 7px 15px;
+  margin: 10px 20px;
+  border: none;
+  background-color: #B6C4D3;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+button:hover{
+  cursor: pointer;
+}
+button:active{
+  opacity: 0.8;
+}
+.button-group{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.pagination ul{
+  display: flex;
+  justify-content: center;
+}
+.pagination ul li {
+  border-radius: 10px;
+  margin-right: 2rem;
+  background-color: var(--bg-color);
+}
+
+/* For light mode */
+[data-theme="light"] .pagination li {
+  --bg-color: blue;
+}
+
+[data-theme="light"] .news-item a {
+  --color: black;
+}
+
+/* For dark mode */
+[data-theme="dark"] .pagination li {
+  --bg-color: red;
+}
+[data-theme="dark"] .news-item a {
+  --color: #c1d8f0;
+}
+
+.custom-pagination-root .MuiButtonBase-root {
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  opacity: 0.5;
+}
+
+
+.comment{
+  cursor: pointer;
+}
+
+.skeleton-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6vh;
+  justify-content: flex-start;
+}
+
+.skeleton {
+  width: 80%;
+  margin-bottom: 0;
+}
